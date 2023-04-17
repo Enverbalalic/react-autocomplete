@@ -1,0 +1,173 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Autocomplete > Renders correctly empty 1`] = `
+<div
+  className="eb-auto-complete"
+>
+  <div
+    className="eb__autocomplete-input-container"
+  >
+    <input
+      className="eb__autocomplete-search-input"
+      onChange={[Function]}
+      placeholder="Search..."
+      value=""
+    />
+  </div>
+</div>
+`;
+
+exports[`Autocomplete > Renders correctly while loading 1`] = `
+<div
+  className="eb-auto-complete"
+>
+  <div
+    className="eb__autocomplete-input-container"
+  >
+    <input
+      className="eb__autocomplete-search-input"
+      onChange={[Function]}
+      placeholder="Search..."
+      value="Test"
+    />
+    <div
+      className="eb__loading-text"
+    >
+      Loading...
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Autocomplete > Renders correctly with custom className and placeholder 1`] = `
+<div
+  className="eb-auto-complete custom-class"
+>
+  <div
+    className="eb__autocomplete-input-container"
+  >
+    <input
+      className="eb__autocomplete-search-input"
+      onChange={[Function]}
+      placeholder="Custom placeholder"
+      value=""
+    />
+  </div>
+</div>
+`;
+
+exports[`Autocomplete > Renders correctly with custom onError 1`] = `
+<div
+  className="eb-auto-complete"
+>
+  <div
+    className="eb__autocomplete-input-container"
+  >
+    <input
+      className="eb__autocomplete-search-input"
+      onChange={[Function]}
+      placeholder="Search..."
+      value="Test"
+    />
+    <div
+      className="eb__autocomplete-error"
+    >
+      A custom error
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Autocomplete > Renders correctly with error promise 1`] = `
+<div
+  className="eb-auto-complete"
+>
+  <div
+    className="eb__autocomplete-input-container"
+  >
+    <input
+      className="eb__autocomplete-search-input"
+      onChange={[Function]}
+      placeholder="Search..."
+      value="Test"
+    />
+    <div
+      className="eb__autocomplete-error"
+    >
+      We couldn't reach the search service. Please try again
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Autocomplete > Renders correctly with items 1`] = `
+<div
+  className="eb-auto-complete"
+>
+  <div
+    className="eb__autocomplete-input-container"
+  >
+    <input
+      className="eb__autocomplete-search-input"
+      onChange={[Function]}
+      placeholder="Search..."
+      value="Test"
+    />
+  </div>
+  <div
+    className="eb__autocomplete-items-dropdown"
+  >
+    <div
+      className="eb__autocomplete-items"
+    >
+      <div
+        className="eb__autocomplete-item"
+        onClick={[Function]}
+      >
+        <span
+          className="eb__autocomplete-highlighted_text"
+        >
+          Test
+        </span>
+      </div>
+      <div
+        className="eb__autocomplete-item"
+        onClick={[Function]}
+      >
+        <span
+          className="eb__autocomplete-highlighted_text"
+        >
+          Test
+        </span>
+        <span
+          className=""
+        >
+          ing
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Autocomplete > Renders correctly with no items 1`] = `
+<div
+  className="eb-auto-complete"
+>
+  <div
+    className="eb__autocomplete-input-container"
+  >
+    <input
+      className="eb__autocomplete-search-input"
+      onChange={[Function]}
+      placeholder="Search..."
+      value="Test"
+    />
+    <div
+      className="eb__autocomplete-no-items-text"
+    >
+      No items
+    </div>
+  </div>
+</div>
+`;

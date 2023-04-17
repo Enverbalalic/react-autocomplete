@@ -1,0 +1,85 @@
+.eb-auto-complete {
+    position: relative;
+}
+
+.eb-auto-complete .eb__autocomplete-input-container {
+    display: flex;
+    align-items: center;
+}
+
+.eb-auto-complete .eb__autocomplete-search-input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0.5rem;
+    outline: none;
+    border: 1px solid #999;
+    border-radius: 6px;
+}
+
+.eb-auto-complete .eb__autocomplete-search-input:focus {
+    padding: 0.5rem;
+    outline: none;
+    border: 1px solid #222;
+    border-radius: 6px;
+}
+
+.eb-auto-complete .eb__autocomplete-error,
+.eb-auto-complete .eb__loading-text,
+.eb-auto-complete .eb__autocomplete-no-items-text {
+    white-space: nowrap;
+    font-size: 0.875rem;
+    padding: 0.2rem 0.5rem;
+}
+
+.eb-auto-complete .eb__autocomplete-error {
+    color: indianred;
+}
+
+.eb-auto-complete .eb__autocomplete-items-dropdown {
+    position: absolute;
+    max-height: 200px;
+    border: 1px solid #999;
+    border-radius: 6px;
+    overflow: hidden;
+    left: 0;
+    right: 0;
+    top: calc(100% + 0.5rem);
+    display: flex;
+    flex-direction: column;
+}
+
+.eb-auto-complete .eb__autocomplete-items {
+    overflow: auto;
+    height: 100%;
+}
+
+
+.eb-auto-complete .eb__autocomplete-item {
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: background-color 100ms ease-in;
+}
+
+.eb-auto-complete .eb__autocomplete-item .eb__autocomplete-highlighted_text {
+    color: indianred;
+}
+
+.eb-auto-complete .eb__autocomplete-item:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+
+.eb-auto-complete .eb__autocomplete-items::-webkit-scrollbar {
+    width: 6px;
+}
+
+.eb-auto-complete .eb__autocomplete-items::-webkit-scrollbar-track {
+    border-radius: 8px;
+    background-color: #e7e7e7;
+    border: 1px solid #cacaca;
+}
+
+.eb-auto-complete .eb__autocomplete-items::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: #999;
+}
